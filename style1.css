@@ -1,0 +1,126 @@
+body{
+  margin:50px;
+  background-image:url("https://rachelleskinner.github.io/EscapeRoomDesign/stoneTexture.jpg");
+}
+.allElements{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+#title{
+  text-align:center;
+  font-family: 'Akaya Telivigala', cursive;
+  font-size:60px;
+  letter-spacing: 3px;
+  animation: textshadow 5s infinite;
+  background-color:#a16505;
+  padding:15px;
+  margin-left:500px;
+  margin-right:500px;
+  border-radius:8px;
+  border-style: double;
+  border-width:17px;
+  border-color:#702702;
+  color:#2e1204;
+}
+/*creates a glowing effect*/
+@keyframes textshadow{
+  50% {
+    text-shadow: 0px 0px 20px #E0C34D,
+                 0px 0px 40px #E0C34D
+  }
+}
+#narrative{
+  text-align:center;
+  color:#2e1204;
+  font-size:20px;
+  font-family: 'Cardo', serif;
+  font-weight: 600;
+  margin-bottom:50px;
+}
+hr{
+  color:#702702;
+  background-color:#702702;
+  height:3px;
+  border-style:none;
+  width:1200px;
+  opacity:0.7;
+}
+#message{
+  text-align:center;
+  font-size:70px;
+  font-family: 'Cinzel', serif;
+  color:#2e1204;
+  font-weight: 900;
+  margin-top:100px;
+  margin-bottom:100px;
+}
+#textBox{
+  text-align:center;
+  font-size:30px;
+  width:300px;
+  font-family: 'Cardo', serif;
+  background-color:#fae4a7;
+  border-color:#702702;
+  border-style:solid;
+  border-width:3px;
+}
+#twoWords{
+  text-align:center;
+  letter-spacing:1px;
+  font-family: 'Cardo', serif;
+  font-weight: 600;
+  color:#2e1204;
+}
+/*Is displayed when played inputs correct answer*/
+#reward{
+  display:none;
+  text-align:center;
+  margin-top:30px;
+  color:#2e1204;
+  font-size:20px;
+  font-family: 'Cardo', serif;
+  font-weight: 600;
+}
+/*Is displayed when played inputs correct answer*/
+#nextPuzzle{
+  display:none;
+  margin-top:30px;
+  margin-left:auto;
+  margin-right:auto;
+  background-color:#a16505;
+  border-style:solid;
+  border-color:#702702;
+  border-radius:8px;
+  font-size:20px;
+  font-family: 'Akaya Telivigala', cursive;
+  font-weight: 600;
+  letter-spacing: 1px;
+  width:300px;
+  color:#2e1204;
+  cursor:pointer;
+}
+
+#submitBtn{
+  margin-top:40px;
+  background-color:#a16505;
+  border-style:solid;
+  border-color:#702702;
+  border-radius:8px;
+  font-size:20px;
+  font-family: 'Akaya Telivigala', cursive;
+  font-weight: 600;
+  letter-spacing: 1px;
+  width:100px;
+  color:#2e1204;
+  cursor:pointer;
+}
+/*creates glowing effect when user is hovering over it*/
+#submitBtn:hover{
+  box-shadow: 0 0 20px #E0C34D;
+  border-color:#a16505;
+}
+#nextPuzzle:hover{
+  box-shadow: 0 0 20px #E0C34D;
+  border-color:#a16505;
+}
