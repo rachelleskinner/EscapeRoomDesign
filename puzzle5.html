@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Decipher the Message</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Cinzel:wght@500&amp;display=swap'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Akaya+Telivigala&amp;display=swap'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&amp;display=swap"rel="stylesheet'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<audio id="incorrectAudio">
+  <source src="https://rachelleskinner.github.io/EscapeRoomDesign/IncorrectSound.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<audio id="correctAudio">
+  <source src="https://rachelleskinner.github.io/EscapeRoomDesign/CorrectSound.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<h1 id="title">Decipher the Message</h1>
+<p id="narrative">Another message to decode? Well, this message is in hieroglyphs, so it makes sense.<br>You are a scribe after all, so this should'nt be too bad.</p>
+<hr>
+
+<img id="message" src="https://rachelleskinner.github.io/EscapeRoomDesign/messageCode.jpg">
+
+<!--Image from previous puzzle-->
+<img id="codeImg" src="https://rachelleskinner.github.io/EscapeRoomDesign/hieroglyphicsCode.jpg" width=355.6px height=275.1px>
+
+<input type="text" id="textBox">
+<button type="button" id="submitBtn" onclick="checkAnswer()">Submit</button>
+
+<p id="reward">Ra is leader..this is probably a really important message so don't forget it.<br>You have solved every obstacle in your way so far, nothing can stop you now! You must keep going.</p>
+
+<a id="link" href="https://rachelleskinner.github.io/EscapeRoomDesign/puzzle6.html">
+<button type="button" class="center" id="nextPuzzle">Proceed to the Final Puzzle</button>
+</a>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
