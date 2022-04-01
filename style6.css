@@ -1,0 +1,226 @@
+body{
+  margin:50px;
+  background-image:url("https://rachelleskinner.github.io/EscapeRoomDesign/stoneTexture.jpg");
+}
+#title{
+  text-align:center;
+  font-family: 'Akaya Telivigala', cursive;
+  font-size:60px;
+  letter-spacing: 3px;
+  animation: textshadow 5s infinite;
+  background-color:#a16505;
+  padding:15px;
+  width:700px;
+  margin-left:auto;
+  margin-right:auto;
+  border-radius:8px;
+  border-style: double;
+  border-width:17px;
+  border-color:#702702;
+  color:#2e1204;
+}
+@keyframes textshadow{
+  50% {
+    text-shadow: 0px 0px 20px #E0C34D,
+                 0px 0px 40px #E0C34D
+  }
+}
+#narrative{
+  text-align:center;
+  color:#2e1204;
+  font-size:20px;
+  font-family: 'Cardo', serif;
+  font-weight: 600;
+  margin-bottom:50px;
+}
+hr{
+  color:#702702;
+  background-color:#702702;
+  height:3px;
+  border-style:none;
+  width:1200px;
+  opacity:0.7;
+}
+#imgBg{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:100px;
+  background-color:white;
+  height:320px;
+  width:auto;
+  border-style: solid;
+  border-width:5px;
+  border-radius:5px;
+  border-color:#702702;
+  box-shadow:0 0 20px black;
+  position:relative;
+  
+}
+/*each image is formatted based on their specific position using imgBg div as the parent(relative) and the images being the children (absolute). absolute positions images based on imgBg's position, not the window.*/
+#ankh{
+  display:inline;
+  cursor:pointer;
+  opacity:0.5;
+  position:absolute;
+  margin-left:7%;
+}
+#eye{
+  display:inline;
+  cursor:pointer;
+  opacity:0.5;
+  margin-top:50px;
+  position:absolute;
+  margin-right:25%;
+  right:0px;
+}
+#ra{
+  display:inline;
+  cursor:pointer;
+  opacity:0.5;
+  margin-top:40px;
+  position:absolute;
+  margin-left:25%;
+}
+#djed{
+  display:inline;
+  cursor:pointer;
+  opacity:0.5;
+  position:absolute;
+  margin-right:7%;
+  right:0px;
+}
+img#ankh:hover, img#eye:hover, img#ra:hover, img#djed:hover{
+  opacity:1.0;
+}
+#stoneButton{
+  border-radius:2px;
+  border-style: outset;
+  border-width: 10px;
+  border-color:#9B7E32;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:70px;
+  cursor:pointer;
+}
+#buttonCnt{
+  text-align:center;
+  display:block;
+  color:#2e1204;
+  font-size:20px;
+  font-family: 'Cardo', serif;
+  font-weight: 600;
+}
+/*formats the buttons to be side by side*/
+#btns{
+  height:40px;
+  margin:auto;
+  width:20%;
+  position:relative;
+}
+#resetButton{
+  position:absolute;
+  left:0px;
+  background-color:#a16505;
+  border-style:solid;
+  border-color:#702702;
+  border-radius:8px;
+  font-size:20px;
+  font-family: 'Akaya Telivigala', cursive;
+  font-weight: 600;
+  letter-spacing: 1px;
+  width:100px;
+  color:#2e1204;
+  cursor:pointer;
+}
+#resetButton:hover{
+  box-shadow: 0 0 20px #E0C34D;
+  border-color:#a16505;
+}
+#submitBtn{
+  position:absolute;
+  right:0px;
+  background-color:#a16505;
+  border-style:solid;
+  border-color:#702702;
+  border-radius:8px;
+  font-size:20px;
+  font-family: 'Akaya Telivigala', cursive;
+  font-weight: 600;
+  letter-spacing: 1px;
+  width:100px;
+  color:#2e1204;
+  cursor:pointer;
+}
+#submitBtn:hover{
+  box-shadow: 0 0 20px #E0C34D;
+  border-color:#a16505;
+}
+#hint{
+  text-align:center;
+  color:#2e1204;
+  font-size:20px;
+  font-family: 'Cardo', serif;
+  font-weight: 600;
+  margin-top:70px;
+  margin-bottom:40px;
+}
+#firstImgNut {
+ display:inline;
+  margin-bottom:50px;
+  border-radius:8px;
+  border-style:solid;
+  border-width:5px;
+  border-color:#702702;
+}
+.container{
+  position:relative;
+  display:inline;
+  text-align: center;
+  left:17%;
+}
+.riddleImg{
+  display:inline;
+  border-radius:8px;
+  border-style:solid;
+  border-width:5px;
+  border-color:#702702;
+}
+img.riddleImg:hover {
+  opacity:0;
+}
+.riddle{
+  font-family: 'Cinzel', serif;
+  font-size:30px;
+  z-index:-1;
+  color:#2e1204;
+  position:absolute;
+  left:0%;
+  bottom:400%;
+}
+
+#escapeBtn{
+  display:none;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:60px;
+  background-color:#a16505;
+  border-style:solid;
+  border-color:#702702;
+  border-radius:8px;
+  font-size:20px;
+  font-family: 'Akaya Telivigala', cursive;
+  font-weight: 600;
+  letter-spacing: 1px;
+  width:100px;
+  color:#2e1204;
+  cursor:pointer;
+}
+#escapeBtn:hover{
+  box-shadow: 0 0 20px #E0C34D;
+  border-color:#a16505;
+}
+#link{
+  text-decoration:none;
+}
