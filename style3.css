@@ -1,0 +1,132 @@
+body{
+  margin:50px;
+  background-image:url("https://rachelleskinner.github.io/EscapeRoomDesign/stoneTexture.jpg");
+}
+/*gives images a "clickable" look on hover w/ syling*/
+ .allImg{
+  border-radius:5px;
+  cursor:pointer;
+  border-style:solid;
+  border-width:5px;
+  border-color:#702702;
+} 
+#title{
+  text-align:center;
+  font-family: 'Akaya Telivigala', cursive;
+  font-size:60px;
+  letter-spacing: 3px;
+  animation: textshadow 5s infinite;
+  background-color:#a16505;
+  padding:15px;
+  width:700px;
+  margin-left:auto;
+  margin-right:auto;
+  border-radius:8px;
+  border-style: double;
+  border-width:17px;
+  border-color:#702702;
+  color:#2e1204;
+}
+@keyframes textshadow{
+  50% {
+    text-shadow: 0px 0px 20px #E0C34D,
+                 0px 0px 40px #E0C34D
+  }
+}
+ #narrative{
+  text-align:center;
+  color:#2e1204;
+  font-size:20px;
+  font-family: 'Cardo', serif;
+  font-weight: 600;
+  margin-bottom:40px;
+  }
+hr{
+  color:#702702;
+  background-color:#702702;
+  height:3px;
+  border-style:none;
+  width:1200px;
+  opacity:0.7;
+  margin-bottom:60px;
+}
+/*div holds all images in a box*/
+#imgDiv{
+  position:relative;
+  height:350px;
+}
+#narmer{
+ position:absolute;
+  display:inline;
+  left:0px;
+  margin-top:60px;
+}
+#khufu{
+  position:absolute;
+  display:inline;
+  left:20%;
+  margin-top:13px;
+}
+#nefertiti{
+  position:absolute;
+  display:inline;
+  left:43%;
+  margin-top:13px;
+}
+#ramesses{
+  position:absolute;
+  display:inline;
+  right:20%;
+  margin-top:15px;
+}
+
+#amenhotep{
+  position:absolute;
+  display:inline;
+  right:0px;
+} 
+#glyphs{
+  display: none;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto; 
+  width:20%;
+  border-radius:5px;
+  border-style:solid;
+  border-width:5px;
+  border-color:#702702;
+}
+#reward{
+  display:none;
+  text-align:center;
+  color:#2e1204;
+  font-size:20px;
+  font-family: 'Cardo', serif;
+  font-weight: 600;
+  margin-bottom:40px;
+}
+#nextPuzzle{
+  display:none;
+  margin-top:30px;
+  margin-left:auto;
+  margin-right:auto;
+  background-color:#a16505;
+  border-style:solid;
+  border-color:#702702;
+  border-radius:8px;
+  font-size:20px;
+  font-family: 'Akaya Telivigala', cursive;
+  font-weight: 600;
+  letter-spacing: 1px;
+  width:300px;
+  color:#2e1204;
+  cursor:pointer;
+}
+#nextPuzzle:hover{
+  box-shadow: 0 0 20px #E0C34D;
+  border-color:#a16505;
+}
+#link{
+  text-decoration: none;
+}

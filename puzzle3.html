@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Identify Khufu Statue</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Cinzel:wght@500&amp;display=swap'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Akaya+Telivigala&amp;display=swap'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&amp;display=swap"rel="stylesheet'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<audio id="incorrectAudio">
+  <source src="https://rachelleskinner.github.io/EscapeRoomDesign/IncorrectSound.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<audio id="correctAudio">
+  <source src="https://rachelleskinner.github.io/EscapeRoomDesign/CorrectSound.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<h1 id="title">Identify the Statue</h1>
+<p id="narrative">Don't forget the clue from the previous puzzle, it is crucial for this one.<br>Five statues sitting perfectly in all their glory. Which one is the right one?</p>
+<hr>
+
+<!--div is for CSS formatting and layout-->
+<div id="imgDiv">
+<img class="allImg" id="narmer" onclick="incorrectButton()" src="https://rachelleskinner.github.io/EscapeRoomDesign/Narmer.jpg" alt="Pharaoh Narmer Statue" width=200px >
+
+<img class="allImg" id="khufu" onclick="correctButton()" src="https://rachelleskinner.github.io/EscapeRoomDesign/Khufu.jpg" alt="Paraoh Khufu Statue" width="200px" height="294.01px" >
+
+<img class="allImg" id="nefertiti" onclick="incorrectButton()" src="https://rachelleskinner.github.io/EscapeRoomDesign/Nefertiti.jpg" alt="Pharaoh Nefertiti Statue" width=200px >
+
+<img class="allImg" id="ramesses" onclick="incorrectButton()" src="https://rachelleskinner.github.io/EscapeRoomDesign/Ramesses.jpg" alt="Pharaoh Ramesses Statue" width=200px >
+
+<img class="allImg" id="amenhotep" onclick="incorrectButton()" src="https://rachelleskinner.github.io/EscapeRoomDesign/Amenhotep.jpg" alt="Pharaoh Amenhotep Statue" width=200px >
+</div>
+
+<img id="glyphs" src="https://rachelleskinner.github.io/EscapeRoomDesign/hieroglyphicsCode.jpg" alt="Hieroglyphics Code Alphabet" width=355.6px height=275.1px>
+  
+<!--only appears if user anwsers correctly-->
+  <p id="reward">You obtained a code alphabet! This might come in handy.</p>
+
+<a id="link" href="https://rachelleskinner.github.io/EscapeRoomDesign/puzzle4.html">
+  <button type="button" id="nextPuzzle">Proceed to the Next Puzzle</button>
+</a>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
