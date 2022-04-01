@@ -1,0 +1,64 @@
+body{
+    text-align:center;
+    background-image: url("https://rachelleskinner.github.io/EscapeRoomDesign/stoneTexture.jpg");
+  margin:30px;
+  border-style:double;
+  border-width:10px;
+  border-color:#702702;
+  padding:30px;
+  }
+#title {
+  margin:auto;
+  margin-top:20px;
+  margin-bottom:30px;
+  animation: titleshadow 3s infinite;
+  border-style:solid;
+  border-width:5px;
+  border-color:#702702;
+  border-radius:8px;
+}
+@keyframes titleshadow{
+  50% {box-shadow: 0px 10px 10px #E6B561}
+}
+#narrative{
+  font-size:27px;
+  font-weight:600;
+  font-family: 'Cardo', serif;
+  margin-left:50px;
+  margin-right:50px;
+  color:#2e1204;
+}
+hr{
+  color:#702702;
+  background-color:#702702;
+  height:3px;
+  border-style:none;
+  width:1200px;
+  opacity:0.7;
+  margin-top:50px;
+  margin-bottom:50px;
+}
+#startBtn{
+  text-decoration:none;
+  background-color:#a16505;
+  border-style:solid;
+  border-color:#702702;
+  border-radius:8px;
+  font-size:40px;
+  font-family: 'Akaya Telivigala', cursive;
+  font-weight: 600;
+  letter-spacing: 1px;
+  width:450px;
+  height:60px;
+  color:#2e1204;
+  cursor:pointer;
+  text-align:center;
+  margin-bottom:40px;
+}
+#startBtn:hover{
+  box-shadow: 0 0 20px #E0C34D;
+  border-color:#a16505;
+}
+#link{
+  text-decoration: none;
+}
