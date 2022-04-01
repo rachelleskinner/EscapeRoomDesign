@@ -1,0 +1,220 @@
+body{
+  margin:50px;
+  background-image:url("https://rachelleskinner.github.io/EscapeRoomDesign/stoneTexture.jpg");
+}
+#title{
+  text-align:center;
+  font-family: 'Akaya Telivigala', cursive;
+  font-size:60px;
+  letter-spacing: 3px;
+  animation: textshadow 5s infinite;
+  background-color:#a16505;
+  padding:15px;
+  width:700px;
+  margin-left:auto;
+  margin-right:auto;
+  border-radius:8px;
+  border-style: double;
+  border-width:17px;
+  border-color:#702702;
+  color:#2e1204;
+}
+@keyframes textshadow{
+  50% {
+    text-shadow: 0px 0px 20px #E0C34D,
+                 0px 0px 40px #E0C34D
+  }
+}
+#narrative{
+  text-align:center;
+  color:#2e1204;
+  font-size:20px;
+  font-family: 'Cardo', serif;
+  font-weight: 600;
+  margin-bottom:50px;
+}
+hr{
+  color:#702702;
+  background-color:#702702;
+  height:3px;
+  border-style:none;
+  width:1200px;
+  opacity:0.7;
+}
+#morseAlphabet{
+  display:inline;
+  position:relative;
+  left:60px;
+  margin-top:100px;
+  margin-left:auto;
+  margin-right:auto;
+  border-radius:5px;
+  border-style:solid;
+  border-width:5px;
+  border-color:#702702;
+}
+/*div container for light animation*/
+#lightContainer{
+  display:inline;
+  position:relative;
+  left:300px;
+  bottom:35px;
+}
+/*The box/background for the light image*/
+#lightDisplay{
+  border-style:solid;
+  border-color:#702702;
+  border-radius:5px;
+  border-width:5px;
+  position:relative;
+  margin-left:auto;
+  margin-right:auto;
+}
+/*the light that is flashing when play is pressed*/
+#light{
+  opacity:0;
+  position:absolute;
+  bottom: 120px;
+  right: 165px;
+}
+#play{
+  display:inline;
+  position:relative;
+  left:75px;
+  background-color:#a16505;
+  border-style:solid;
+  border-color:#702702;
+  border-radius:8px;
+  font-size:20px;
+  font-family: 'Akaya Telivigala', cursive;
+  font-weight: 600;
+  letter-spacing: 1px;
+  width:60px;
+  color:#2e1204;
+  cursor:pointer;
+}
+#play:hover{
+  box-shadow: 0 0 20px #E0C34D;
+  border-color:#a16505;
+}
+#textBox{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:70px;
+  text-align:center;
+  font-size:30px;
+  width:300px;
+  font-family: 'Cardo', serif;
+  background-color:#fae4a7;
+  border-color:#702702;
+  border-style:solid;
+  border-width:3px;
+}
+#tinyHint{
+  text-align:center;
+  letter-spacing:1px;
+  font-family: 'Cardo', serif;
+  font-weight: 600;
+  color:#2e1204;
+}
+#submitBtn{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:40px;
+  background-color:#a16505;
+  border-style:solid;
+  border-color:#702702;
+  border-radius:8px;
+  font-size:20px;
+  font-family: 'Akaya Telivigala', cursive;
+  font-weight: 600;
+  letter-spacing: 1px;
+  width:100px;
+  color:#2e1204;
+  cursor:pointer;
+}
+#submitBtn:hover{
+  box-shadow: 0 0 20px #E0C34D;
+  border-color:#a16505;
+}
+#reward{
+  display:none;
+  text-align:center;
+  color:#2e1204;
+  font-size:20px;
+  font-family: 'Cardo', serif;
+  font-weight: 600;
+  margin-bottom:40px;
+}
+#nextPuzzle{
+  display:none;
+  margin-top:30px;
+  margin-left:auto;
+  margin-right:auto;
+  background-color:#a16505;
+  border-style:solid;
+  border-color:#702702;
+  border-radius:8px;
+  font-size:20px;
+  font-family: 'Akaya Telivigala', cursive;
+  font-weight: 600;
+  letter-spacing: 1px;
+  width:300px;
+  color:#2e1204;
+  cursor:pointer;
+}
+#nextPuzzle:hover{
+  box-shadow: 0 0 20px #E0C34D;
+  border-color:#a16505;
+}
+#link{
+  text-decoration: none;
+}
+
+/*Each keyframe corresponds with a morse code dot or dash, animations are triggered by play button and their sequence is formed in javascript. Animations A,B,C,etc. are repeats b/c javascript cannot timeout the same animation at the same time*/
+@keyframes morseDotA {
+  0% {opacity:0;}
+  50% {opacity:1;}
+  100% {opacity:0;}
+}
+@keyframes morseDotB {
+  0% {opacity:0;}
+  50% {opacity:1;}
+  100% {opacity:0;}
+}
+@keyframes morseDashA {
+  0% {opacity:0;}
+  20% {opacity:1;}
+  40% {opacity:1;}
+  60% {opacity:1;}
+  80% {opacity:1;}
+  100% {opacity:0;}
+}
+@keyframes morseDashB {
+  0% {opacity:0;}
+  20% {opacity:1;}
+  40% {opacity:1;}
+  60% {opacity:1;}
+  80% {opacity:1;}
+  100% {opacity:0;}
+}
+@keyframes morseDotC {
+  0% {opacity:0;}
+  50% {opacity:1;}
+  100% {opacity:0;}
+}
+@keyframes morseDashC {
+  0% {opacity:0;}
+  20% {opacity:1;}
+  40% {opacity:1;}
+  60% {opacity:1;}
+  80% {opacity:1;}
+  100% {opacity:0;}
+}
+@keyframes morseDotD {
+  0% {opacity:0;}
+  50% {opacity:1;}
+  100% {opacity:0;}
+}
