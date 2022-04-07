@@ -17,6 +17,7 @@ function checkAnswer() {
 
 function correctWindow() {
   alert("Nice! You may proceed...");
+  //changes the style to block so the user can see it 
   document.getElementById("reward").style.display = "block";
   document.getElementById("nextPuzzle").style.display = "block";
 }
