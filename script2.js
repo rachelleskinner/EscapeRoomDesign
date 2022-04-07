@@ -3,6 +3,7 @@ var y = document.getElementById("correctAudio");
 
 function checkAnswer() {
   var a = document.getElementById("textBox");
+  //converts answer text to uppercase 
   var password = a.value.toUpperCase();
   
   if (password == "NUT") {
