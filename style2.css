@@ -2,6 +2,7 @@ body {
   margin:50px;
   background-image:url("https://rachelleskinner.github.io/EscapeRoomDesign/stoneTexture.jpg");
 }
+/*makes all elements centered but also changes based on the window size*/
 .allElements{
   display:block;
   margin-left:auto;
