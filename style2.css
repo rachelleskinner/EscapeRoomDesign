@@ -49,6 +49,8 @@ hr{
 }
 #firstImg {
  display:inline;
+  position:relative;
+  left:10%;
   border-radius:8px;
   margin-top:165px;
   margin-left:auto;
@@ -65,6 +67,8 @@ hr{
 }
 .riddleImg{
   display:inline;
+  position:relative;
+  right:30%;
   margin-top:100px;
   margin-left:auto;
   margin-right:auto;
@@ -83,7 +87,7 @@ img.riddleImg:hover {
   color:#2e1204;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 20%;
   transform: translate(-50%, -50%);
 }
 .space{
