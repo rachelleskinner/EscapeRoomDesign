@@ -57,8 +57,8 @@ hr{
 #lightContainer{
   display:inline;
   position:relative;
-  left:300px;
-  bottom:35px;
+  left:30%;
+  bottom:3em;
 }
 /*The box/background for the light image*/
 #lightDisplay{
@@ -80,7 +80,7 @@ hr{
 #play{
   display:inline;
   position:relative;
-  left:75px;
+  left:16em;
   background-color:#a16505;
   border-style:solid;
   border-color:#702702;
