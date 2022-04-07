@@ -50,7 +50,7 @@ hr{
   opacity:0.7;
   margin-bottom:60px;
 }
-/*div holds all images in a box*/
+/*div holds all images in a box for formatting purposes*/
 #imgDiv{
   position:relative;
   height:350px;
@@ -61,6 +61,7 @@ hr{
   left:0px;
   margin-top:60px;
 }
+/*each image is inline but each are positioned specifically while re-sizing based on window size*/
 #khufu{
   position:absolute;
   display:inline;
@@ -85,6 +86,7 @@ hr{
   display:inline;
   right:0px;
 } 
+/*displays only if player clicks the correct image*/
 #glyphs{
   display: none;
   max-width: 100%;
@@ -127,6 +129,7 @@ hr{
   box-shadow: 0 0 20px #E0C34D;
   border-color:#a16505;
 }
+/*gets rid of blue underline*/
 #link{
   text-decoration: none;
 }
